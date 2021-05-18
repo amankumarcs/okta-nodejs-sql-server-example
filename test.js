@@ -519,6 +519,40 @@ keys.forEach(element => {
 
 var testData = data[0];
 
+let items = ["100","200","500","1000","2000","total"];
+let key100 = keyFor100;
+items.foreach((elem1)=>{
+    data.forEach(element => {
+    var data = {
+        "Sr No" : element["Sr No"],
+        "Bank" : element["Bank"] ,
+        "Feeder Branch": element["Feeder Branch"],
+        "ATM ID" : element["ATM ID"],
+        "LOCATION" : element["LOCATION"],
+        "Date" : element["Date"],
+        "Eod or Loading Time" : element["Eod or Loading Time"],
+        "Status of Loading" : element["Status of Loading"],
+        "Last Transaction No" : element["Last Transaction No"],
+        "CRA" : element["CRA"],
+        "Indent No" : element["Indent No"],
+        "Bank Ref No": element["Bank Ref No"],
+    }
+
+    (key + elem1).forEach(elementNew => {
+      data[elementNew] = element[elementNew]
+    });
+
+    data100["Status one"] = element["Status one"];
+    data100["Status two"] = element["Status two"];
+    data100["Remarks"] = element["Remarks"];
+    data100["processName"] = element["processName"];
+    data100["clientName"] = element["clientName"];
+    data100["id"] = element["id"];
+
+    finalData.push(data)
+});
+});
+
 // For 100
 data.forEach(element => {
     var data100 = {
