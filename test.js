@@ -47,3 +47,20 @@ uniQueIndex.forEach(element => {
 //items.sort(function (a, b) {
   //return a.value - b.value;
 //});
+
+
+
+
+// let data1 = [];
+// uniQueIndex.forEach(element => {
+//   // console.log(sortData[element]);
+//   sortData[element].sort(function (a, b) {
+//       return a["Deno"] - b["Deno"];
+//     });
+//     console.log("+++++++++++++++++++++")
+//     console.log(sortData)
+//     data1 = [...data1 , ...sortData[element]]
+//     console.log("+++++++++++++++++++++")
+// });
+
+// console.log(data1)
