@@ -29,8 +29,14 @@ let sortData = testSort.reduce((r, a) => {
 var _ = require('underscore');
 let uniQueIndex = _.uniq(x)
 uniQueIndex.forEach(element => {
-    console.log(sortData[element]);
-    
+    // console.log(sortData[element]);
+    sortData[element].sort(function (a, b) {
+        return a["Deno"] - b["Deno"];
+      });
+      console.log("+++++++++++++++++++++")
+      console.log(sortData)
+      console.log("+++++++++++++++++++++")
+
 
    
 
