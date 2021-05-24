@@ -36,3 +36,8 @@ uniQueIndex.forEach(element => {
 
 
 });
+
+
+function compareData(a, b) {
+    return a["Deno"] - b["Deno"];
+  }
