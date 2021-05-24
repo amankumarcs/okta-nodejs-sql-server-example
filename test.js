@@ -38,6 +38,6 @@ uniQueIndex.forEach(element => {
 });
 
 
-function compareData(a, b) {
-    return a["Deno"] - b["Deno"];
-  }
+//items.sort(function (a, b) {
+  //return a.value - b.value;
+//});
